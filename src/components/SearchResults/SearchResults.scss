@@ -1,0 +1,34 @@
+.searchResults-container-total {
+
+    .navbarBackground {
+        background: #003580;
+        height: 60px;
+        width: 100vw;
+    }
+
+    .searchResults-container {
+
+
+        display: flex;
+        justify-content: space-between;
+
+        width: 86%;
+        margin: auto;
+        height: auto;
+        margin-top: 0px;
+        margin-bottom: 50px;
+        .form-results {
+            width: 330px;
+            // background-color: rgb(108, 197, 226);
+            background: linear-gradient(90deg, rgb(108, 197, 226) 0%, rgb(50, 23, 23) 100%);
+            padding-top: 50px;
+            padding-left: 30px;
+            height: 550px;
+        }
+
+        .results {
+            height: auto;
+            width: 800px;
+        }
+    }
+}

@@ -1,0 +1,81 @@
+.ResultCard-container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid lightgray;
+    padding: 20px;
+    margin: 30px;
+    .left {
+        display: flex;
+        justify-content: flex-start;
+        width: 80%;
+        .image {
+            // border:1px solid red;
+            height: 200px;
+            width: 200px;
+
+            img {
+                border-radius: 5px;
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+
+        .moreInfo {
+            padding-left: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            width: 400px;
+            .title {
+                font-size: 1.3em;
+                font-weight: bold;
+
+                color: #BC5B01;
+                width: 300px;
+            }
+
+           
+        }
+    }
+
+    .right {
+        // border: 1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: flex-end;
+
+        .point {
+            height: 40px;
+            width: 40px;
+            background-color: #076db6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: white;
+        }
+
+        .price {
+            // border: 1px solid red;
+            width: 100px;
+            font-size: 1.1rem;
+            text-align: right;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .button {
+            // border: 1px solid red;
+            display: flex;
+            height: 40px;
+          
+            button {
+                color: white;
+                background-color: #0071C6;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                
+            }
+        }
+    }
+}

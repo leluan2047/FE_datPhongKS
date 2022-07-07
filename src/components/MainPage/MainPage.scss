@@ -1,0 +1,55 @@
+.mainPage-container {
+    background-color: white;
+
+    h1 {
+        text-align: center;
+    }
+
+    .swiper-container {
+
+        width: 70%;
+
+        .swiper-slide {
+            height: 250px;
+            width: 250px;
+
+            img {
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    .circle {
+
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+        margin: auto;
+        // 
+        margin-top: 50px;
+        padding-bottom: 80px;
+
+        .circle-image {
+            height: 170px;
+            width: 170px;
+            p{
+                text-align: center;
+                font-family: "Roboto","Helvetica","Arial",sans-serif;
+            }
+            img {
+                clip-path: circle();
+                height: 100%;
+                width: 100%;
+                object-fit: cover;
+                transition: transform .6s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+    }
+}
