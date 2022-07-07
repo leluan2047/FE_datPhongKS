@@ -132,19 +132,7 @@ function AdminInfo(props) {
             <div className='AdminInfo-layout'>
 
                 <div className='left'>
-                    <h2>Ảnh đại diện</h2>
-                    <div className='hotel-img' >
-                        <div className='img'>
-                            <img src={img}></img>
-                        </div>
-                        <hr></hr>
-                        <label onChange={(e) => imageHandler(e)} htmlFor="formId">
-                            <input type='file' hidden accept='image/*' onChange={(e) => imageHandler(e)} id="formId" ></input>
-                            <div className='upload-button'>
-                                <UploadOutlined /> &nbsp; Upload
-                            </div>
-                        </label>
-                    </div>
+                    
                 </div>
 
                 <div className='right'>
