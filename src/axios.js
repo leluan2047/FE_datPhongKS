@@ -1,8 +1,8 @@
 import Axios from "axios";
 
 export const axios = Axios.create({
-    // baseURL: 'https://fierce-peak-31965.herokuapp.com/api'
-    baseURL: 'http://localhost:8000/api'
+    baseURL: 'https://fierce-peak-31965.herokuapp.com/api'
+    // baseURL: 'http://localhost:8000/api'
 });
 
 axios.interceptors.request.use(
