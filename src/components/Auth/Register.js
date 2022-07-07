@@ -13,11 +13,14 @@ function Register() {
 
     const imageHandler = (e) => {
         const reader = new FileReader();
+
         reader.onload = () => {
             if (reader.readyState === 2) {
                 setimg(reader.result)
+                console.log(reader.result)
             }
         }
+
         reader.readAsDataURL(e.target.files[0])
         setSelectedFile(e.target.files[0]);
     }
@@ -69,22 +72,7 @@ function Register() {
     return (
         <div className='register-container'>
             <div className='register-all'>
-                <div className='left'>
-                    <h2>Ảnh đại diện</h2>
-                    <div className='hotel-img' >
-                        <div className='img'>
-                            <img src={img}></img>
-                        </div>
-                        <hr></hr>
-                        <label onChange={(e) => imageHandler(e)} htmlFor="formId">
-                            <input type='file' hidden accept='image/*' onChange={(e) => imageHandler(e)} id="formId" ></input>
-                            <div className='upload-button'>
-                                <UploadOutlined /> &nbsp; Upload
-                            </div>
-                        </label>
-                    </div>
-                </div>
-
+               
                 <Form className='form-register'
                     name="basic"
                     labelCol={{
