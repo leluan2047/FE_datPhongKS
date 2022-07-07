@@ -24,6 +24,7 @@ function HotelList() {
         axios
             .get('/hotelManager/Myhotel')
             .then(res => {
+               
                 setDanhSachKS(res.data)
 
                 //------------------------------------

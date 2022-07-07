@@ -88,8 +88,8 @@ function Book(props) {
         axios
             .post('/datPhong', {
                 maPhong: props.id,
-                ngayNhan: moment(ngayNhan).format('YYYY-MM-DDTHH:mm:ss') ,
-                ngayTra: moment(ngayTra).format('YYYY-MM-DDTHH:mm:ss') ,
+                ngayNhan: moment(new Date(ngayNhan)).format('YYYY-MM-DDTHH:mm:ss'),
+                ngayTra: moment(new Date(ngayTra)).format('YYYY-MM-DDTHH:mm:ss'),
                 tongTien: tongTien
             })
             .then(res => {
